@@ -57,7 +57,7 @@ const buttonPlusEvent = function(event){
         const src = event.target.src;
         const ans = prompt("Вы хотите изменить адрес картинки?", src);
         if(ans)
-            src = ans;
+            event.target.src = ans;
     }
  }
 
