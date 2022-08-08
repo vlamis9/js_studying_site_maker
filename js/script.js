@@ -52,7 +52,12 @@ const buttonPlusEvent = function(event){
         const ans = prompt("Вы хотите изменить текст?", text);
         if(ans){
             event.target.innerText = ans;
-        }
+        } 
+    } else {
+        const src = event.target.src;
+        const ans = prompt("Вы хотите изменить адрес картинки?", src);
+        if(ans)
+            event.target.innerText = ans;
     }
  }
 
